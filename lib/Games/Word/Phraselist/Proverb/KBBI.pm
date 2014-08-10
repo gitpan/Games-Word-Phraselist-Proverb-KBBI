@@ -1,7 +1,7 @@
 package Games::Word::Phraselist::Proverb::KBBI;
 
 our $DATE = '2014-08-10'; # DATE
-our $VERSION = '0.01'; # VERSION
+our $VERSION = '0.02'; # VERSION
 
 use 5.010001;
 use strict;
@@ -27,20 +27,20 @@ Games::Word::Phraselist::Proverb::KBBI - Proverb phrases from Kamus Besar Bahasa
 
 =head1 VERSION
 
-This document describes version 0.01 of Games::Word::Phraselist::Proverb::KBBI (from Perl distribution Games-Word-Phraselist-Proverb-KBBI), released on 2014-08-10.
+This document describes version 0.02 of Games::Word::Phraselist::Proverb::KBBI (from Perl distribution Games-Word-Phraselist-Proverb-KBBI), released on 2014-08-10.
 
 =head1 SYNOPSIS
 
   use Games::Word::Phraselist::Proverb::KBBI;
-  my $wl = Games::Word::Phraselist::Proverb::KBBI->new;
-  my $word = $wl->random_phrase;
-  print "We have a phrase." if $wl->is_phrase($word);
+  my $pl = Games::Word::Phraselist::Proverb::KBBI->new;
+  my $phrase = $pl->random_phrase;
+  print "We have a phrase." if $pl->is_phrase($phrase);
 
 =head1 DESCRIPTION
 
 C<< Games::Word::Phraselist::Proverb::KBBI >> subclasses L<<
-Games::Word::Phraselist >>, giving you proverbs preloaded with the Indonesian
-words from Kamus Besar Bahasa Indonesia (currently the third edition, 2001).
+Games::Word::Phraselist >>, giving you phrases of Indonesian proverbs from Kamus
+Besar Bahasa Indonesia (currently the third edition, 2001).
 
 Because the data source is currently not fully cleansed (it is from earlier
 effort: https://github.com/sharyanto/stardict ), I removed some entries.
@@ -48,7 +48,7 @@ effort: https://github.com/sharyanto/stardict ), I removed some entries.
 Some stats:
 
  Number of phrases: 1714
- Shortest phrase length: 28 (including whitespace)
+ Shortest phrase length: 11 (including whitespace)
  Longest phrase length: 104 (including whitespace)
  Average phrase length: 31.2 characters (including whitespace)
 

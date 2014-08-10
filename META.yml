@@ -23,7 +23,7 @@ resources:
   bugtracker: https://rt.cpan.org/Public/Dist/Display.html?Name=Games-Word-Phraselist-Proverb-KBBI
   homepage: https://metacpan.org/release/Games-Word-Phraselist-Proverb-KBBI
   repository: git://github.com/sharyanto/perl-Games-Word-Phraselist-Proverb-KBBI.git
-version: '0.01'
+version: '0.02'
 x_Dist_Zilla:
   perl:
     version: '5.018001'
