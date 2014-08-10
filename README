@@ -1,0 +1,66 @@
+NAME
+    Games::Word::Phraselist::Proverb::KBBI - Proverb phrases from Kamus
+    Besar Bahasa Indonesia (Indonesian)
+
+VERSION
+    This document describes version 0.01 of
+    Games::Word::Phraselist::Proverb::KBBI (from Perl distribution
+    Games-Word-Phraselist-Proverb-KBBI), released on 2014-08-10.
+
+SYNOPSIS
+      use Games::Word::Phraselist::Proverb::KBBI;
+      my $wl = Games::Word::Phraselist::Proverb::KBBI->new;
+      my $word = $wl->random_phrase;
+      print "We have a phrase." if $wl->is_phrase($word);
+
+DESCRIPTION
+    "Games::Word::Phraselist::Proverb::KBBI" subclasses
+    Games::Word::Phraselist, giving you proverbs preloaded with the
+    Indonesian words from Kamus Besar Bahasa Indonesia (currently the third
+    edition, 2001).
+
+    Because the data source is currently not fully cleansed (it is from
+    earlier effort: https://github.com/sharyanto/stardict ), I removed some
+    entries.
+
+    Some stats:
+
+     Number of phrases: 1714
+     Shortest phrase length: 28 (including whitespace)
+     Longest phrase length: 104 (including whitespace)
+     Average phrase length: 31.2 characters (including whitespace)
+
+    Since "Games::Word::Phraselist" is subclassed, all its methods (except
+    "new") are available.
+
+    Kamus Besar Bahasa Indonesia is the definitive Indonesian dictionary,
+    published by Pusat Bahasa.
+
+SEE ALSO
+    Games::Word::Phraselist.
+
+HOMEPAGE
+    Please visit the project's homepage at
+    <https://metacpan.org/release/Games-Word-Phraselist-Proverb-KBBI>.
+
+SOURCE
+    Source repository is at
+    <https://github.com/sharyanto/perl-Games-Word-Phraselist-Proverb-KBBI>.
+
+BUGS
+    Please report any bugs or feature requests on the bugtracker website
+    <https://rt.cpan.org/Public/Dist/Display.html?Name=Games-Word-Phraselist
+    -Proverb-KBBI>
+
+    When submitting a bug or request, please include a test-file or a patch
+    to an existing test-file that illustrates the bug or desired feature.
+
+AUTHOR
+    Steven Haryanto <stevenharyanto@gmail.com>
+
+COPYRIGHT AND LICENSE
+    This software is copyright (c) 2014 by Steven Haryanto.
+
+    This is free software; you can redistribute it and/or modify it under
+    the same terms as the Perl 5 programming language system itself.
+
