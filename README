@@ -3,9 +3,9 @@ NAME
     Besar Bahasa Indonesia (Indonesian)
 
 VERSION
-    This document describes version 0.02 of
+    This document describes version 0.03 of
     Games::Word::Phraselist::Proverb::KBBI (from Perl distribution
-    Games-Word-Phraselist-Proverb-KBBI), released on 2014-08-10.
+    Games-Word-Phraselist-Proverb-KBBI), released on 2014-08-12.
 
 SYNOPSIS
       use Games::Word::Phraselist::Proverb::KBBI;
